@@ -36,7 +36,7 @@ achieve this.
 ## Docker model
 
 Before discussing the Kubernetes approach to networking, it is worthwhile to
-review the "normal" way that networking works with Docker.  By default, Docker
+review the "normal" way ("normal" is the author assumption. for details see https://docs.docker.com/network/ ) that networking works with Docker.  By default, Docker
 uses host-private networking.  It creates a virtual bridge, called `docker0` by
 default, and allocates a subnet from one of the private address blocks defined
 in [RFC1918](https://tools.ietf.org/html/rfc1918) for that bridge.  For each
